@@ -8,9 +8,10 @@ const StyledFooter = styled.footer`
   font-size: 0.75rem;
   text-transform: capitalize;
   position: fixed;
-  bottom:0;
+  bottom: 0;
   left: 0;
   z-index: 3;
+  letter-spacing: 1.1px;
   a {
     color: blue;
     cursor: pointer;
