@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   width: 100%;
-  background: #000;
+  background: transparent;
   color: #fff;
   padding: 0 auto;
   font-size: 0.75rem;
   text-transform: capitalize;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  z-index: 3;
   a {
     color: blue;
     cursor: pointer;
-  }
-  @media (max-width: 767px) {
-    margin: 0;
-    padding-left: 0.5rem;
   }
 `;
 
