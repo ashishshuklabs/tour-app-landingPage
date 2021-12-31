@@ -15,7 +15,7 @@ export const Navigation = ({
       onClose();
     }
   };
-
+  //added classname to hamburger button to uniquely identify and style it.
   return (
     <NavigationContainer>
       <Hamburger className="hamburger" onClick={onOpen} />
@@ -109,8 +109,8 @@ const StyledNavigation = styled.nav`
           content: "";
           position: absolute;
           bottom: -1rem;
-          left: 50%;
-          width: 0;
+          left: 50%;//this is the key to start animation from the center and then expand out
+          width: 0; //Start with 0 width
           height: 2px;
           background: ${designVariables.palette.light200};
           transition: ${designVariables.transition};
@@ -121,8 +121,8 @@ const StyledNavigation = styled.nav`
         }
         &:hover::after {
           background: ${designVariables.palette.green100};
-          width: 100%;
-          left: 0;
+          width: 100%;//max width on hover
+          left: 0;//animation expands the underline completely.
         }
       }
     }

@@ -48,7 +48,7 @@ const StyledButton = styled.button`
     transition: transform 0.3s linear;
     transform: rotateX(0);
     fill: ${designVariables.palette.green700};
-    transition: all 0.3s linear;
+    transition: all 3s linear;
 
     &.rotate {
       transform: rotateX(180deg);
