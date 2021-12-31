@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { designVariables } from "../../../styles/globalVariables";
 
 export const Hamburger = ({
@@ -31,10 +31,19 @@ export const Hamburger = ({
     </StyledButton>
   );
 };
+const scale = keyframes`
+from {
+  transform: scale(.7);
+}
+to{
+  transform: scale(1);
+}
+`;
 const StyledButton = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
+  animation: ${scale} 1.25s ease-in infinite;
   svg {
     transition: transform 0.3s linear;
     transform: rotateX(0);

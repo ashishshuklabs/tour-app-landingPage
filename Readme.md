@@ -6,6 +6,8 @@
 
 #### Styled components
 
+#### Explored keyframes based animation in styled components
+
 #### react
 
 #### typescript
