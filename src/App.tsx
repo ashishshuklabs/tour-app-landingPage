@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Footer } from "./components/footer/Footer";
 import { Rectangle } from "./components/rectangle/Rectangle";
 import { Rectangle2 } from "./components/rectangle/Rectangle-2";
+import { Rectangle3 } from "./components/rectangle/Rectangle-3";
 export const App = () => {
   const [showNav, setShowNav] = useState(false);
   const handleButtonClick = () => {
@@ -22,10 +23,9 @@ export const App = () => {
       />
       <Header />
       <StyledSection>
-        <Rectangle2 />
-
         <Rectangle />
-
+        <Rectangle2 />
+        <Rectangle3 />
         <Footer />
       </StyledSection>
     </StyledApp>
