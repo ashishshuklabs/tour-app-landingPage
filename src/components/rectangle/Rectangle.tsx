@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useScroll } from "../../hooks/useScroll";
 export const Rectangle = () => {
   const ref = React.useRef<HTMLDivElement>(null);
-  const { inView } = useScroll(ref);
+  const { inView } = useScroll(ref, 10);
   return (
     <StyledRectangle ref={ref}>
       <div className={`box-1 ${inView ? "show" : "hide"}`}>
