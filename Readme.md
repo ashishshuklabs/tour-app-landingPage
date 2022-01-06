@@ -1,4 +1,4 @@
-### Basic tours website landing page
+### Basic tours website landing page - This project is all about animation, some specific ones I wanted to do for a while
 
 #### Custom hook for Scroll event. Throttling scroll events for better performance.
 
