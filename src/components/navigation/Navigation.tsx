@@ -35,7 +35,7 @@ export const Navigation = ({
 };
 const NavigationContainer = styled.div`
   .hamburger {
-    position: absolute;
+    position: fixed;
     top: 2%;
     left: 2%;
     z-index: 2;

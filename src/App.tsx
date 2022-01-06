@@ -3,6 +3,8 @@ import { Header } from "./components/header/Header";
 import { Navigation } from "./components/navigation/Navigation";
 import styled from "styled-components";
 import { Footer } from "./components/footer/Footer";
+import { Rectangle } from "./components/rectangle/Rectangle";
+import { Rectangle2 } from "./components/rectangle/Rectangle-2";
 export const App = () => {
   const [showNav, setShowNav] = useState(false);
   const handleButtonClick = () => {
@@ -20,6 +22,10 @@ export const App = () => {
       />
       <Header />
       <StyledSection>
+        <Rectangle2 />
+
+        <Rectangle />
+
         <Footer />
       </StyledSection>
     </StyledApp>
@@ -33,6 +39,7 @@ const StyledSection = styled.section`
 `;
 const StyledApp = styled.main`
   display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   min-height: 100vh;

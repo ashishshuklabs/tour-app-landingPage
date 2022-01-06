@@ -43,12 +43,12 @@ const StyledButton = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  animation: ${scale} 1.25s ease-in infinite; //infinite animation
+  animation: ${scale} 1s ease-in infinite alternate; //infinite animation, alternate ensures smooth transition, as it switches froma and to accordingly ;
   svg {
     transition: transform 0.3s linear;
     transform: rotateX(0);
     fill: ${designVariables.palette.green700};
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 
     &.rotate {
       transform: rotateX(180deg);

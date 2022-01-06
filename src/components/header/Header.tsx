@@ -14,9 +14,6 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
   min-width: 100vw;
   height: 100vh;
   transition: all 0.5s linear;
@@ -32,9 +29,6 @@ const StyledHeader = styled.header`
     color: ${designVariables.palette.green700};
   }
   .banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 10rem auto;
   }
 `;
