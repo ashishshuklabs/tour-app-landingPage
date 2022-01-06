@@ -17,11 +17,13 @@ const StyledRectangle = styled.div`
   width: 100%;
   height: 30rem;
   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .box-1 {
     background-color: white;
     width: 80%;
     height: 10rem;
-    margin: 2rem auto;
     text-align: center;
     padding-top: 5rem;
     opacity: 0;
